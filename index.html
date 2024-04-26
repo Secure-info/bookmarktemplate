@@ -3,19 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDF App</title>
   <link rel="manifest" href="android_manifest.json">
   <link rel="manifest" href="iphone_manifest.json">
+  <style>
+    /* CSS Styles */
+    /* Hide the link */
+    #pdfLink {
+      display: none;
+    }
+  </style>
 </head>
-<body>
+<body onload="downloadPDF()">
   <h1>PDF App</h1>
-  <!-- Android Button -->
-  <a href="pdf_file.pdf" download>
-    <img src="icon.png" alt="PDF Icon" width="100" height="100">
-  </a>
-  <!-- iPhone Button -->
-  <a href="pdf_file.pdf" download>
-    <img src="icon.png" alt="PDF Icon" width="100" height="100">
-  </a>
+  <!-- PDF Download Link -->
+  <a id="pdfLink" href="Galaxy_Catalog.pdf" download>Download PDF</a>
+
+  <!-- JavaScript to trigger download -->
+  <script>
+    function downloadPDF() {
+      var link = document.getElementById('pdfLink');
+      link.click();
+    }
+  </script>
 </body>
 </html>
+
