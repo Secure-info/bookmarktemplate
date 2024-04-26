@@ -3,9 +3,9 @@
   "short_name": "PDF App",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "path/to/your/galaxy_logo_og.png",
       "sizes": "180x180",
-      "type": "galaxy_logo_og.png"
+      "type": "image/png"
     }
   ],
   "start_url": "/index.html",
