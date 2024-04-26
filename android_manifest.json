@@ -1,0 +1,16 @@
+{
+  "name": "PDF App",
+  "short_name": "PDF App",
+  "icons": [
+    {
+      "src": "galaxy_logo_og.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}
